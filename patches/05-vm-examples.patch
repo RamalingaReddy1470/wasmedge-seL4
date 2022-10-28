@@ -157,6 +157,12 @@ index 0000000..4fe1e97
 +    "usr/bin"
 +    overlay
 +)
++AddFileToOverlayDir(
++    "wasi_example_main.wasm"
++    ${CMAKE_CURRENT_SOURCE_DIR}/overlay_files/wasi_example_main.wasm
++    "usr/bin"
++    overlay
++)
 +
 +# Add hello wasm file to test wasmedge
 +AddFileToOverlayDir(
