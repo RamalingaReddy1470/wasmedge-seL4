@@ -33,7 +33,7 @@ if [ -n "${GITHUB_ACTIONS:-}" ]; then
   git branch "$GITHUB_REF_NAME"
   .repo/repo/repo init -b "$GITHUB_REF_NAME" -m "$MANIFEST" -u ..
 else
-  .repo/repo/repo init -b main -u https://github.com/RamalingaReddy1470/second-state/wasmedge-seL4.git
+  .repo/repo/repo init -b main -u https://github.com/RamalingaReddy1470/wasmedge-seL4.git
 fi
 
 # Update and checkout files
